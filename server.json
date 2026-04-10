@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.gavelin-ai/mcp",
+  "description": "State legislative intelligence for AI agents \u2014 speaker-attributed hearing transcripts, bills, votes, and AI reports from US state legislatures",
+  "title": "Gavelin",
+  "websiteUrl": "https://gavelin.ai",
+  "repository": {
+    "url": "https://github.com/gavelin-ai/mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gavelin.ai/mcp"
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "categories": [
+        "legislative",
+        "government",
+        "policy",
+        "research"
+      ],
+      "tool_count": 7,
+      "authentication": "bearer-token",
+      "free_tier_available": true
+    }
+  }
+}
