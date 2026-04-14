@@ -1,9 +1,13 @@
 FROM node:20-alpine
 
-RUN npm install -g mcp-remote@0.1.38
+WORKDIR /app
+
+COPY package.json ./
+RUN npm install --omit=dev
+
+COPY proxy.js ./
 
 ENV GAVELIN_API_KEY=""
 ENV HOME=/tmp
-ENV MCP_REMOTE_CONFIG_DIR=/tmp/.mcp-auth
 
-ENTRYPOINT ["sh", "-c", "exec mcp-remote https://mcp.gavelin.ai/mcp --transport http-only --header \"Authorization: Bearer ${GAVELIN_API_KEY}\""]
+CMD ["node", "proxy.js"]

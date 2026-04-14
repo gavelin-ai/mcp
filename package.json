@@ -1,0 +1,16 @@
+{
+  "name": "gavelin-mcp-proxy",
+  "version": "1.0.0",
+  "description": "stdio-to-Streamable-HTTP proxy for mcp.gavelin.ai — enables local MCP inspectors to introspect the hosted Gavelin server.",
+  "type": "module",
+  "main": "proxy.js",
+  "bin": {
+    "gavelin-mcp-proxy": "proxy.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
