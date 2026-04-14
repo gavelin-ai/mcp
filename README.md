@@ -110,4 +110,4 @@ Gavelin is an AI-powered legislative intelligence platform.
 
 ## License
 
-This repository contains documentation only. The Gavelin MCP server is a proprietary hosted service.
+The MIT License in this repository applies **only to the documentation contained here** (README, server configuration files, logos). The Gavelin MCP server itself is a proprietary hosted service operated by Gavelin ([gavelin.ai](https://gavelin.ai)) and is not covered by the MIT License. Access to the server requires an API key issued under Gavelin's terms of service.
