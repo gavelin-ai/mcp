@@ -9,10 +9,16 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { ResultSchema } from "@modelcontextprotocol/sdk/types.js";
 
 const REMOTE_URL = process.env.GAVELIN_MCP_URL || "https://mcp.gavelin.ai/mcp";
-const API_KEY = process.env.GAVELIN_API_KEY;
+const AUTH_HEADER = (process.env.Authorization || process.env.AUTHORIZATION || "").trim();
+const RAW_KEY = (process.env.GAVELIN_API_KEY || "").trim();
+const API_KEY = AUTH_HEADER
+  ? AUTH_HEADER.replace(/^Bearer\s+/i, "")
+  : RAW_KEY;
 
 if (!API_KEY) {
-  console.error("[gavelin-proxy] GAVELIN_API_KEY is required");
+  console.error(
+    "[gavelin-proxy] Missing credentials. Set Authorization=\"Bearer <key>\" or GAVELIN_API_KEY=<key>."
+  );
   process.exit(1);
 }
 
