@@ -1,6 +1,6 @@
 # Gavelin MCP Server
 
-**State legislative intelligence for AI agents.** The only MCP server with speaker-attributed hearing transcripts from US state legislatures.
+**State legislative records for AI tools.** Speaker-attributed hearing transcripts from US state legislatures, alongside bill records from all 50 states.
 
 Search bills across all 50 states, find what legislators said in hearings, get full committee hearing transcripts with speaker attribution — all via the Model Context Protocol.
 
@@ -47,7 +47,7 @@ The server uses Streamable HTTP transport. Any MCP-compatible client (Cursor, Wi
 
 ## Get an API Key
 
-Sign up at [gavelin.ai](https://gavelin.ai) and generate an API key from your Account page under "Developer API."
+Sign up for a free account at [gavelin.ai](https://gavelin.ai) and generate an API key from your Account page under "Developer API."
 
 ## Available Tools
 
@@ -70,7 +70,7 @@ Search speaker-attributed hearing and floor session segments. Find what specific
 Get full details on a specific bill including sponsor, subjects, committee, legislative history, and any hearing mentions.
 
 ### `get_speaker_activity`
-Get everything a specific legislator or witness has said in hearings and floor sessions. Useful for opposition research, coalition mapping, and pre-meeting preparation.
+Get everything a specific legislator or witness has said in hearings and floor sessions.
 
 ### `search_committee_hearings`
 Browse committee and public hearings by topic, committee, chamber, or date range.
@@ -83,30 +83,20 @@ See which states have data and what type (bills, transcripts, or both).
 
 ## Rate Limits
 
-| Plan | Limit |
-|------|-------|
-| Starter | 100 calls/hour |
-| Professional | 500 calls/hour |
-| Enterprise | Custom |
+API keys are free and rate-limited. Email hello@gavelin.ai if you need higher limits.
 
-## What Makes This Different
-
-Every government affairs team will have AI agents doing policy research. Those agents need clean, structured legislative data. Gavelin is the access layer.
+## What's in it
 
 - **Speaker attribution** — real names on hearing testimony, not "Speaker A/B"
-- **All 50 states** — not just federal, not just one state
+- **All 50 states** — bill records for every state, with hearing transcripts for a growing number of states
 - **Historical depth** — multiple years of legislative sessions
-- **Authenticated + rate-limited** — production-ready for team workflows
-
-No other MCP server has speaker-attributed state legislative hearing transcripts.
 
 ## About
 
-Gavelin is an AI-powered legislative intelligence platform.
+Gavelin is a searchable archive of state legislative proceedings. Search is free at [gavelin.ai](https://gavelin.ai).
 
 - **Web app:** [gavelin.ai](https://gavelin.ai)
 - **Contact:** hello@gavelin.ai
-- **Pricing:** [gavelin.ai](https://gavelin.ai) — Starter, Professional, and Enterprise plans
 
 ## License
 
